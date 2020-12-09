@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    button {
+      margin: 15px;
+      padding: 3px 10px;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .search-field {
+      position: relative;
+
+      input {
+        width: 300px;
+        height: 50px;
+        font-size: 24px;
+        text-align: center;
+        border: 1px solid #aaaaff;
+      }
+
+      .search-list {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        border: 0.5px solid #000;
+
+        .search-item {
+          background-color: #fff;
+          cursor: pointer;
+          &:hover,
+          &:active {
+            background-color: #aaa;
+          }
+        }
+      }
+    }
+
+    .fav-btn {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #aaaaff;
+      border-radius: 7px;
+      font-size: 18px;
+      cursor: pointer;
+      &:hover,
+      &:active {
+        background-color: #bbbbff;
+      }
+    }
+
+    .current-conditions {
+      margin: 50px 20px;
+      h5 {
+        text-align: center;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        margin: 10px 0;
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    .five-day-forecast {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .five-day-item {
+        width: 170px;
+        margin: 10px;
+        text-align: center;
+        .wrapper-time-of-day {
+          margin-top: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          .time-of-day {
+            img {
+              width: 70px;
+              height: 70px;
+            }
+          }
+        }
+      }
+    }
+
+    .favorites {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-evenly;
+
+      // .current-conditions {
+      //   cursor: pointer;
+      // }
+    }
+  }
+}
