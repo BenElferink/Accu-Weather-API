@@ -9,7 +9,7 @@ function FavoritesPage() {
     <main>
       <div className='favorites'>
         {favorites.map((item) => (
-          <div style={{ position: 'relative' }}>
+          <div key={item.Key} style={{ position: 'relative' }}>
             <span
               style={{ position: 'absolute', top: '0', right: '0', color: '#ff0000', fontSize: '24px', cursor: 'pointer' }}
               onClick={() => {
