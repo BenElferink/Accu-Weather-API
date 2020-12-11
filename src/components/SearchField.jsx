@@ -81,7 +81,7 @@ function SearchField({ setCityData }) {
 
   return (
     <div className='search-field'>
-      <input type='text' value={searchFieldText} onChange={doAutoComplete} />
+      <input type='text' placeholder='Search a city...' value={searchFieldText} onChange={doAutoComplete} />
       <div className='search-list'>
         {searchResults.map((item) => (
           <div
