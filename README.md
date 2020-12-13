@@ -18,4 +18,4 @@ NOTE: this API is limited to 50 requests per day. our recommendation is to save 
 
 ## Preview:
 
-<img src="./src/screenshot.png" alt="screenshot" width="300" />
+<img src="./src/screenshot.png" alt="screenshot" width="500" />
