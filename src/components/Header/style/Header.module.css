@@ -1,0 +1,20 @@
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.component button {
+  margin: 10px;
+  padding: 6px 11px;
+  background-color: #aaaaff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.component button:hover,
+.component button:active {
+  background-color: #bbbbff;
+}

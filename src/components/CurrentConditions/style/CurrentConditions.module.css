@@ -1,0 +1,14 @@
+.component {
+  margin: 50px 20px;
+}
+
+.component h5,
+.component p {
+  text-align: center;
+}
+
+.component img {
+  width: 150px;
+  height: 150px;
+  margin: 10px 0;
+}

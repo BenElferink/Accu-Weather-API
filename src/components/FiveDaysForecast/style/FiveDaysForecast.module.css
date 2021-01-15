@@ -1,0 +1,24 @@
+.component {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.item {
+  width: 170px;
+  margin: 10px;
+  text-align: center;
+}
+
+.wrapper {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+}

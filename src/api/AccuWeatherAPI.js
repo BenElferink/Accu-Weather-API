@@ -1,5 +1,5 @@
 // Limited to 50 calls per day !!!
-export const apiKey = 'iVQNNeeMBhmGKOx6Vmt29vw5fAq5YitW';
+const apiKey = process.env.REACT_APP_API_KEY;
 console.log(`🌐 -USING- apiKey: ${apiKey}`);
 
 export const getSearchResults = async (cityName) => {
@@ -37,7 +37,7 @@ export const getCurrentConditions = async (locationKey) => {
     const response = await fetch(base + query);
     const data = await response.json();
     console.log(`✅ -FETCHED- currentConditions: ${locationKey}`, data);
-    return data;
+    return data[0];
     // data = [
     //   {
     //     EpochTime: 1607291460,
@@ -65,7 +65,7 @@ export const getFiveDaysForecast = async (locationKey) => {
     const response = await fetch(base + query);
     const data = await response.json();
     console.log(`✅ -FETCHED- fiveDaysForecast: ${locationKey}`, data);
-    return data;
+    return data.DailyForecasts;
     // data = {
     //   DailyForecasts: [
     //     {

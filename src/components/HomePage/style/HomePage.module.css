@@ -1,0 +1,20 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 7px 14px;
+  background-color: #aaaaff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background-color: #bbbbff;
+}
