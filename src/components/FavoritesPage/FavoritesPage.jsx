@@ -12,14 +12,18 @@ function FavoritesPage({ favorites, setFavorites }) {
   return (
     <main className={styles.main}>
       <div className={styles.favorites}>
-        {favorites.map((item) => (
-          <div className={styles.item} key={item.Key}>
-            <span className={styles.delete} onClick={() => removeFromFavorites(item.Key)}>
-              &times;
-            </span>
-            <CurrentConditions cityData={item} />
-          </div>
-        ))}
+        {!favorites.length ? (
+          <div>No favorites added</div>
+        ) : (
+          favorites.map((item) => (
+            <div className={styles.item} key={item.Key}>
+              <span className={styles.delete} onClick={() => removeFromFavorites(item.Key)}>
+                &times;
+              </span>
+              <CurrentConditions cityData={item} />
+            </div>
+          ))
+        )}
       </div>
     </main>
   );
