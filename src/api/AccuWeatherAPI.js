@@ -4,7 +4,7 @@ console.log(`🌐 -USING- apiKey: ${apiKey}`);
 
 export const getSearchResults = async (cityName) => {
   try {
-    const base = 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete',
+    const base = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete',
       query = `?apikey=${apiKey}&q=${cityName}`;
     const response = await fetch(base + query);
     const data = await response.json();
@@ -32,7 +32,7 @@ export const getSearchResults = async (cityName) => {
 
 export const getCurrentConditions = async (locationKey) => {
   try {
-    const base = 'http://dataservice.accuweather.com/currentconditions/v1/',
+    const base = 'https://dataservice.accuweather.com/currentconditions/v1/',
       query = `${locationKey}?apikey=${apiKey}`;
     const response = await fetch(base + query);
     const data = await response.json();
@@ -60,7 +60,7 @@ export const getCurrentConditions = async (locationKey) => {
 
 export const getFiveDaysForecast = async (locationKey) => {
   try {
-    const base = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/',
+    const base = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/',
       query = `${locationKey}?apikey=${apiKey}`;
     const response = await fetch(base + query);
     const data = await response.json();
