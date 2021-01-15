@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import styles from './style/App.module.css';
 import { getStorage, setStorage } from './../../js/localStorage';
 import Header from '../Header/Header';
@@ -22,11 +22,10 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path='/' component={() => <Redirect to='/weather-api' />} />
-          <Route exact path='/weather-api'>
+          <Route exact path='/'>
             <HomePage favorites={favorites} setFavorites={setFavorites} />
           </Route>
-          <Route exact path='/weather-api/favorites'>
+          <Route exact path='/favorites'>
             <FavoritesPage favorites={favorites} setFavorites={setFavorites} />
           </Route>
         </Switch>

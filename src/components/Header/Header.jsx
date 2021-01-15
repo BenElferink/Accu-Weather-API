@@ -5,8 +5,8 @@ function Header() {
   const history = useHistory();
   return (
     <header className={styles.component}>
-      <button onClick={() => history.push('/weather-api')}>Home</button>
-      <button onClick={() => history.push('/weather-api/favorites')}>Favorites</button>
+      <button onClick={() => history.push('/')}>Home</button>
+      <button onClick={() => history.push('/favorites')}>Favorites</button>
     </header>
   );
 }
