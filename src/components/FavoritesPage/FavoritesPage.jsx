@@ -10,7 +10,7 @@ function FavoritesPage({ favorites, setFavorites }) {
   };
 
   return (
-    <main className={styles.main}>
+    <>
       <div className={styles.favorites}>
         {!favorites.length ? (
           <div>No favorites added</div>
@@ -25,7 +25,7 @@ function FavoritesPage({ favorites, setFavorites }) {
           ))
         )}
       </div>
-    </main>
+    </>
   );
 }
 

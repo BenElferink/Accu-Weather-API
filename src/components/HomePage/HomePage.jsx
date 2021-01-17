@@ -50,7 +50,7 @@ export default function HomePage({ favorites, setFavorites }) {
   };
 
   return (
-    <main className={styles.main}>
+    <>
       <SearchField setCityData={setCityData} />
       <button className={styles.button} onClick={addToFavorites}>
         Add to favorites
@@ -58,6 +58,6 @@ export default function HomePage({ favorites, setFavorites }) {
 
       <CurrentConditions cityData={cityData} />
       <FiveDaysForecast cityData={cityData} />
-    </main>
+    </>
   );
 }

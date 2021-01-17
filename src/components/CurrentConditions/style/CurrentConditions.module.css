@@ -1,10 +1,14 @@
 .component {
-  margin: 50px 20px;
+  margin: 42px 20px;
 }
 
 .component h5,
 .component p {
   text-align: center;
+}
+
+.component h5 {
+  font-size: 20px;
 }
 
 .component img {
