@@ -1,7 +1,5 @@
 # AccuWeather - ReactJS
 
-### Open app: [https://belferink1996.github.io/weather-api](https://belferink1996.github.io/weather-api)
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## OVERVIEW

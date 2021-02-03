@@ -1,7 +1,7 @@
 import styles from './style/FavoritesPage.module.css';
-import CurrentConditions from '../CurrentConditions/CurrentConditions';
+import CurrentConditions from '../CurrentConditions';
 
-function FavoritesPage({ favorites, setFavorites }) {
+export default function FavoritesPage({ favorites, setFavorites }) {
   // this function filters-out the location selected for removal
   const removeFromFavorites = (locationKey) => {
     let copyOfFavorites = [...favorites];
@@ -28,5 +28,3 @@ function FavoritesPage({ favorites, setFavorites }) {
     </>
   );
 }
-
-export default FavoritesPage;

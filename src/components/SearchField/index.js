@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import styles from './style/SearchField.module.css';
-import { getStorage, setStorage } from './../../js/localStorage';
+import { getStorage, setStorage } from '../../js/localStorage';
 import { getSearchResults } from '../../api/AccuWeatherAPI';
 
-function SearchField({ setCityData }) {
+export default function SearchField({ setCityData }) {
   // default (onLoad): value = empty 'String'
   // --> after (onChange): value = 'String'
   const [searchFieldText, setSearchFieldText] = useState('');
@@ -91,5 +91,3 @@ function SearchField({ setCityData }) {
     </div>
   );
 }
-
-export default SearchField;

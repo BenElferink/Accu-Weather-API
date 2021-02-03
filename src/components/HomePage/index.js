@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import { getStorage, setStorage } from '../../js/localStorage';
 import styles from './style/HomePage.module.css';
-import SearchField from '../SearchField/SearchField';
-import CurrentConditions from '../CurrentConditions/CurrentConditions';
-import FiveDaysForecast from '../FiveDaysForecast/FiveDaysForecast';
+import SearchField from '../SearchField';
+import CurrentConditions from '../CurrentConditions';
+import FiveDaysForecast from '../FiveDaysForecast';
 
 export default function HomePage({ favorites, setFavorites }) {
   // default (onLoad): value = look for data in {localStorage}, if none, set default value: ('Tel Aviv' cityData)

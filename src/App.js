@@ -2,11 +2,11 @@ import { useState, useEffect, useCallback } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import './style/style.css';
 import { getStorage, setStorage } from './js/localStorage';
-import Header from './components/Header/Header';
-import HomePage from './components/HomePage/HomePage';
-import FavoritesPage from './components/FavoritesPage/FavoritesPage';
+import Header from './components/Header';
+import HomePage from './components/HomePage';
+import FavoritesPage from './components/FavoritesPage';
 
-function App() {
+export default function App() {
   // default (onLoad): value = look for data in {localStorage}, if none, set default value: (empty Array)
   const [favorites, setFavorites] = useState(
     useCallback(() => getStorage('AccuWeather_Favorites', []), []),
@@ -35,5 +35,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

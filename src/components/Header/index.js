@@ -1,7 +1,7 @@
 import { useHistory } from 'react-router-dom';
 import styles from './style/Header.module.css';
 
-function Header() {
+export default function Header() {
   const history = useHistory();
   return (
     <header className={styles.component}>
@@ -10,5 +10,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
